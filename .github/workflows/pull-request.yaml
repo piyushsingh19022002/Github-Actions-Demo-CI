@@ -1,0 +1,23 @@
+name: Pull Request CI
+
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  validate:
+    runs-on:
+      ubuntu-latest
+
+    steps:
+      - name: Checkout trigger
+        uses: actions/checkout@v4
+      - name: Setup Environment
+        uses: actions/setup-node
+        with: 
+          node-version: 20
+      - name: Installing Dependecies
+        run: npm Install
+      - name: Test Running
+        run: npm test
+        
