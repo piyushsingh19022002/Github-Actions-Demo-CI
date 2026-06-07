@@ -16,6 +16,8 @@ jobs:
         uses: actions/setup-node@v5
         with: 
           node-version: 24
+      - name: Checking Branch name
+        run: echo "Workflow is running on ${{github.ref_name}}"
       - name: Installing Dependecies
         run: npm install
       - name: Test Running
