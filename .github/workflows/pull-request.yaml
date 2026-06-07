@@ -15,7 +15,7 @@ jobs:
       - name: Setup Environment
         uses: actions/setup-node
         with: 
-          node-version: 20
+          node-version: 18
       - name: Installing Dependecies
         run: npm Install
       - name: Test Running
