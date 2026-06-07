@@ -11,9 +11,9 @@ jobs:
 
     steps:
       - name: Checkout trigger
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Setup Environment
-        uses: actions/setup-node
+        uses: actions/setup-node@v5
         with: 
           node-version: 24
       - name: Installing Dependecies
