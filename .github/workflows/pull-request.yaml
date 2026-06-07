@@ -17,6 +17,6 @@ jobs:
         with: 
           node-version: 24
       - name: Installing Dependecies
-        run: npm Install
+        run: npm install
       - name: Test Running
         run: npm test
